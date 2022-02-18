@@ -1,0 +1,176 @@
+:root {
+  --bg_color:#3772FF;
+  --bg_color:rgb(26, 25, 25);
+  /* --bg_color:#DF2935; */
+  /* --bg_color:yellow; */
+  --txt_color:white;
+ }
+ body{
+   background-color: rgb(34, 201, 212);
+   /* background-color: #DF2935; */
+    /* background-image: url("");
+    background-size:cover;
+    background-repeat: no-repeat; */
+ }
+ .content{
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     height: 100vh;
+     margin-top: 30px;
+     flex-wrap: wrap;
+    
+   }
+   .btn>input{
+       display: block;
+       /* width: 100px; */
+       background-color: var(--bg_color); 
+       color: var(--txt_color);
+ 
+        /* color: white; */
+       margin: 5px  auto;
+       /* margin-top: 0; */
+       margin-bottom: 0px;
+       padding: 10px;
+       border-radius: 20px;
+       border: none;
+       font-size: 1rem;
+       transform: skewX(-20deg);
+       cursor: pointer;
+ 
+   }
+   #first{
+     width: 24rem;
+   
+   }
+   #second{
+     margin-left: r1.5em;
+   }
+ 
+   textarea{
+     display: inline-block;
+     width: 30rem;
+     height: 35rem;
+     font-size: 1.1rem;
+     font-family: sans-serif;
+ 
+     background-attachment: local;
+     background-image:
+         linear-gradient(to right, white 10px, transparent 10px),
+         linear-gradient(to left, white 10px, transparent 10px),
+         repeating-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
+     line-height: 31px;
+     padding: 8px 10px;
+     resize:none;
+     /* margin-top: 10px; */
+   }
+   .containers{
+     padding: .5rem;
+   }
+   #heading{
+       background-color:var(--bg_color);
+       color: var(--txt_color);
+       padding: 3px;
+       /* width: 150px ; */
+     margin:  auto;
+     margin-top: 15px;
+     text-align: center;
+   }
+   #user_logo{
+       height: 6rem;
+       width: 6rem;
+       border-radius: 50%;
+   }
+   #photo{
+     width: 17rem;
+   }
+   #user{
+       background-color: var(--bg_color);
+       display: flex;
+       /* border: 2px solid red; */
+       flex-wrap: wrap;
+       color: var(--txt_color);
+       align-items: center;
+       justify-content: center;
+       padding: .6rem;
+       border-radius: 20px;
+     
+       
+   }
+   .user_info{
+     margin-right: 1rem;
+     /* text-align: center; */
+   }
+   .user_diary{
+       background-color: var(--bg_color);
+       transform:skewx(-25deg);
+       margin: 15px;
+       padding: 10px;
+       color: var(--txt_color);
+       text-align: center;
+       border-radius: 20px;
+       cursor: pointer;
+      
+   }
+   h4{
+       text-align: center;
+       margin: 10px;
+   }
+   .see_all{
+       background-color: var(--bg_color);
+       color: var(--txt_color);
+       text-align: center;
+       text-decoration: none;
+       padding: 8px;
+       width: 8rem;
+       display: block;
+       margin:10px auto;
+       border-radius: 20px;
+       cursor: pointer;
+
+   }
+#viewAllDiary{
+  display: none;
+ width:100px;
+ background-color: black;
+ padding: 8px;
+ margin: auto;
+ text-align: center;
+ border-radius: 20px;
+}
+#viewAllDiary a {
+  text-decoration: none;
+  color: white;
+}
+   #prev_content{
+     display: none;
+   }
+   @media  screen and (min-width:1200px) {
+    html{
+      font-size: 12.5px;
+    }
+    #user{
+      margin-top: 20px;
+    }
+  }
+  @media  screen and (max-width:470px) {
+    html{
+      font-size: 12px;
+    }
+  }  
+  @media  screen and (max-width:980px)  and (min-width:550px) {
+  #photo{
+    display: none;
+  }
+ 
+  }  
+  @media  screen and (min-width:1300px) {
+    html{
+      font-size: 18px;
+    }
+  } 
+  @media  screen and (min-width:2200px) {
+    html{
+      font-size: 30px;
+    }
+  }  
